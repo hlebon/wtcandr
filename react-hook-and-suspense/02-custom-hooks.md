@@ -1,9 +1,11 @@
-# 02 - Custom Hooks
+# React Hooks and Suspense
+
+## 02 - Custom Hooks
 
 1. It is easy to share login across multiple components.
 2. Can be an implementation detail, that allows us to abstract logic of an app.
 
-## Example: Abstract Logic
+### Example: Abstract Logic
 
 ```javascript
 import React, { useState } from "react";
