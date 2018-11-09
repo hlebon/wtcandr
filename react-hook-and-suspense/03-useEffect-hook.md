@@ -1,6 +1,6 @@
 # React Hooks and Suspense
 
-## 02 - Store Values in LocalStorage with the React useEffect Hook
+## 03 - Store Values in LocalStorage with the React useEffect Hook
 
 1. to perform side effect we can use `useEffect`
 2. you can think of `useEffect` Hook as componentDidMount, componentDidUpdate, and componentWillUnmount combined.
@@ -37,8 +37,7 @@ function Counter() {
   const localState = () => Number(window.localStorage.getItem("count") || 0);
   const { counter, IncrementCount } = UseCounter(localState, 1);
   useEffect(
-    val => {
-      console.log("val", val);
+    () => {
       window.localStorage.setItem("count", counter);
     },
     // array as an optional second argument to useEffect
